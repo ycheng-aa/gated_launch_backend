@@ -1,0 +1,18 @@
+Django==1.10.0
+djangorestframework >= 3.5,<3.6
+django-filter==1.0.4
+mysqlclient
+django-mptt
+Pillow
+gunicorn
+PyMySQL
+pycurl
+urllib3
+celery==4.0.2
+redis==2.10.5
+requests
+gevent
+xlrd
+django-redis
+newrelic
+raven

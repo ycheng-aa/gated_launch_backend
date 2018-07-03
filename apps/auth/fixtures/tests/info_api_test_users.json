@@ -1,0 +1,66 @@
+[
+{
+    "pk": 1,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "normal_user_new",
+        "email": "normal_user_new@test.com",
+        "password": "test"
+    }
+},
+{
+    "pk": 2,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "normal_user_one_task",
+        "email": "normal_user_one_task@test.com",
+        "password": "test"
+    }
+},
+{
+    "pk": 3,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "normal_user_two_task",
+        "email": "normal_user_two_task@test.com",
+        "password": "test"
+    }
+},
+{
+    "pk": 4,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "admin_user",
+        "email": "admin_user@test.com",
+        "password": "test",
+        "_role": 1
+    }
+},
+{
+    "pk": 5,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "app_owner_user",
+        "email": "app_owner_user@test.com",
+        "password": "test"
+    }
+},
+    {
+        "pk": 6,
+        "model": "gated_launch_auth.User",
+        "fields": {
+            "username": "user_one_task",
+            "email": "user_one_task@test.com",
+            "password": "test"
+        }
+    },
+{
+    "pk": 7,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "user_no_task",
+        "email": "user_no_task@test.com",
+        "password": "test"
+    }
+}
+]

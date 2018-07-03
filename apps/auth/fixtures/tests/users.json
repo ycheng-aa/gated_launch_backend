@@ -1,0 +1,75 @@
+[
+{
+    "pk": 1,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "normal_user",
+        "email": "normal_user@test.com",
+        "phone": "111111111111",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w=",
+        "department": 3
+    }
+},
+{
+    "pk": 2,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "admin_user",
+        "email": "admin_user@test.com",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w=",
+        "_role": 1,
+        "department": 4
+    }
+},
+{
+    "pk": 3,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "app_owner_user",
+        "email": "app_owner_user@test.com",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w="
+    }
+},
+{
+    "pk": 4,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "manong",
+        "email": "manong@test.com",
+        "phone": "22222222222222",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w=",
+        "department": 3
+    }
+},
+{
+    "pk": 5,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "mingong",
+        "email": "mingong@test.com",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w=",
+        "department": 4
+    }
+},
+{
+    "pk": 6,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "dalingdao",
+        "email": "dalingdao@test.com",
+        "phone": "33333333333333",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w=",
+        "department": 1
+    }
+},
+{
+    "pk": 7,
+    "model": "gated_launch_auth.User",
+    "fields": {
+        "username": "test_app_owner",
+        "email": "test_app_owner@test.com",
+        "password": "pbkdf2_sha256$30000$UDIHaej6UJV3$fRuaErld4kMIZ6tFz7rsInrflHXHIPLVbxfvjjgv46w=",
+        "department": 4
+    }
+}
+]

@@ -1,0 +1,41 @@
+node ('10.213.42.240') {
+try {
+   stage('Clone Code') {
+   git branch: '$GERRIT_REFNAME', credentialsId: '97171186-aa3c-4a94-9fdb-dc601c3247f9', url: 'ssh://jenkins@git.intra.ffan.com:8022/qa/gated-launch-backend'
+   echo 'get code successful!'
+   }
+   stage('Code Analysis&Unit Test') {
+        //自动触发时，sonar检查命令，需要外部提供 auto testReport 参数
+	   sh 'make integration'
+	   sh 'make coverage'
+       def temp=GERRIT_PROJECT.replaceAll("/","_")
+       sh "./ci/sonar_scanner.sh $auto $GERRIT_PROJECT $testReport $coverageReport $GERRIT_REFNAME $GERRIT_EVENT_ACCOUNT_NAME"
+       echo 'code analysis and unit test successful!'
+	   println "http://sonar.intra.ffan.com/dashboard/index/ffan.$temp"
+   }
+   stage('package&upload') {
+       sh './ci/package.sh ${BUILD_NUMBER} ${product_name} ${module_name}'
+   }
+   stage('Deploy to sit') {
+   //download the package and deploy to sit
+       sh './ci/deploy.sh sit ${BUILD_NUMBER} ${product_name} ${module_name}'
+       echo 'deploy to sit env successful!'
+   }
+   stage('Autotest'){
+        //download the package and run the apitest
+        sh 'python3 ci/autotest.py'
+        echo 'autotest successful!'
+   }
+   }catch (err){
+	echo "this pipeline is faild"
+	stage ('Send Notification & MSG'){
+        //mail (to: 'chengyu21@wanda.cn,renhaitao@wanda.cn,duanhao5@wanda.cn,huangliang23@wanda.cn,huangqiangsheng@wanda.cn,lizhanpeng5@wanda.cn,tangyukun1@wanda.cn,wangxiaodong37@wanda.cn,liqianyang@wanda.cn',
+		mail (to: 'chengyu21@wanda.cn,renhaitao@wanda.cn,pengjinxiao@wanda.cn,zhaochunyan7@wanda.cn',
+         subject: "pipeline: ${JOB_NAME}--${BUILD_NUMBER} is faild",
+         body:  "Please go to ${BUILD_URL}. \n\n please go to jenkins to find the owner of this fail,and fix the problem in 30 mins ");
+	sh 'curl http://qalarm.infra.intra.ffan.com/api/sms -d  ctx_ids="chengyu21,renhaitao,pengjinxiao,zhaochunyan7" -d business_name=jenkins -d exception_name=pipeline-failed -d exception_detail=${BUILD_URL}'
+	 error 'this pipeline is faild'
+    }
+    }
+}
+

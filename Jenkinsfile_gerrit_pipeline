@@ -1,0 +1,41 @@
+node ('10.213.42.240') {
+try {
+   stage('Clone Code') {
+   // Checkout the Gerrit git repository using the existing
+   git url: 'ssh://jenkins@git.intra.ffan.com:8022/qa/gated-launch-backend'
+   // Fetch the changeset to a local branch using the build parameters provided to the
+   // build by the Gerrit plugin...
+   def changeBranch = "change-${GERRIT_CHANGE_NUMBER}-${GERRIT_PATCHSET_NUMBER}"
+   sh "git fetch origin ${GERRIT_REFSPEC}:${changeBranch}"
+   sh "git checkout ${changeBranch}"
+   echo 'get code successful!'
+   }
+   stage('Code Analysis&Unit Test') {
+       //自动触发时，sonar检查命令，需要外部提供 auto testReport 参数
+           sh 'sudo /usr/local/python35/bin/pip3 install -r requirements/production.txt'
+	   sh 'sudo /usr/local/python35/bin/pip3 install -r requirements/devel.txt'
+	   sh 'make integration'
+	   sh 'make coverage'
+	   def temp=GERRIT_PROJECT.replaceAll("/","_")
+       sh "./ci/sonar_scanner.sh $auto $GERRIT_PROJECT $testReport $coverageReport $GERRIT_REFNAME $GERRIT_EVENT_ACCOUNT_NAME"
+       echo 'code analysis and unit test successful!'
+	   println "http://sonar.intra.ffan.com/dashboard/index/ffan.${temp}.$GERRIT_EVENT_ACCOUNT_NAME"
+		def author=GERRIT_CHANGE_OWNER_EMAIL[0..-10]
+		echo '++++++++++++++++'
+		println GERRIT_CHANGE_OWNER_EMAIL
+		echo '==============='
+		println author
+   }
+   }catch (err){
+	echo "this pipeline is faild"
+	stage ('Send Notification & MSG'){
+        mail (to: 'chengyu21@wanda.cn,${GERRIT_CHANGE_OWNER_EMAIL}',
+         subject: "pipeline: ${JOB_NAME}--${BUILD_NUMBER} is faild",
+         body:  "Please go to ${BUILD_URL}. \n\n this fail is cause by ${GERRIT_CHANGE_OWNER_NAME},please fix the problem in 30 mins ");
+		//当邮箱为@wanda.cn时，author才能获取成功
+		def author=GERRIT_CHANGE_OWNER_EMAIL[0..-10]
+		sh 'curl http://qalarm.infra.intra.ffan.com/api/sms -d  ctx_ids=${GERRIT_CHANGE_OWNER_NAME} -d business_name=jenkins -d exception_name=pipeline-failed -d exception_detail=${BUILD_URL}'
+	 error 'this pipeline is faild'
+    }
+    }
+   }

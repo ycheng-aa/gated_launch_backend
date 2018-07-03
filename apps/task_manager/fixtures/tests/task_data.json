@@ -1,0 +1,32 @@
+[
+  {
+    "model": "task_manager.graystatus",
+    "pk": 1,
+    "fields": {
+        "created_time": "2017-01-01T00:00:00",
+        "updated_time": "2017-01-01T00:00:00",
+        "name": "preparation",
+        "description": "准备中"
+    }
+  },
+  {
+    "model": "task_manager.graystatus",
+    "pk": 2,
+    "fields": {
+        "created_time": "2017-01-01T00:00:00",
+        "updated_time": "2017-01-01T00:00:00",
+        "name": "testing",
+        "description": "测试中"
+    }
+  },
+  {
+    "model": "task_manager.graystatus",
+    "pk": 3,
+    "fields": {
+        "created_time": "2017-01-01T00:00:00",
+        "updated_time": "2017-01-01T00:00:00",
+        "name": "finished",
+        "description": "已结束"
+    }
+  }
+]

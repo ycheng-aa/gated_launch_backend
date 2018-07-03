@@ -1,0 +1,58 @@
+[
+    {
+        "pk": 1,
+        "model": "issue.Issue",
+        "fields": {
+            "app": 1,
+            "task":1,
+            "creator":4,
+            "title":"issue of admin",
+            "detail": "aabbceadfdfdfdfdfdf",
+            "jira_link":"ee-123",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "issue.Issue",
+        "fields": {
+            "app": 2,
+            "task":2,
+            "creator":2,
+            "title":"issue of one task user",
+            "detail": "aabbceadfdfdfdfdfdf",
+            "jira_link":"ee-123",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "issue.Issue",
+        "fields": {
+            "app": 1,
+            "task":1,
+            "creator":3,
+            "title":"issue of two task user",
+            "detail": "aabbceadfdfdfdfdfdf",
+            "jira_link":"ee-123",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "issue.Issue",
+        "fields": {
+            "app": 2,
+            "task":2,
+            "creator":3,
+            "title":"issue of admin",
+            "detail": "aabbceadfdfdfdfdfdf",
+            "jira_link":"ee-123",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    }
+]

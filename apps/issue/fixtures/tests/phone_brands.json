@@ -1,0 +1,9 @@
+[
+{
+    "pk": 1,
+    "model": "issue.PhoneBrand",
+    "fields": {
+        "name": "Huawei P8"
+    }
+}
+]

@@ -1,0 +1,175 @@
+[
+    {
+        "model": "strategy.pushchannel",
+        "pk": 1,
+        "fields":
+        {
+            "created_time": "2017-07-05T00:00:00",
+            "updated_time": "2017-07-05T00:00:00",
+            "name": "sms"
+        }
+    },
+    {
+        "model": "strategy.pushchannel",
+        "pk": 2,
+        "fields":
+        {
+            "created_time": "2017-07-05T00:00:00",
+            "updated_time": "2017-07-05T00:00:00",
+            "name": "mail"
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 1,
+        "fields":
+        {
+            "created_time": "2017-07-05T00:00:00",
+            "updated_time": "2017-07-07T16:40:29.239",
+            "name": "内灰策略1",
+            "app": 1,
+            "push_content": "<p>test push content999</p>",
+            "creator": 1,
+            "user_groups": [],
+            "push_channels": []
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 6,
+        "fields":
+        {
+            "created_time": "2017-07-07T15:53:08.012",
+            "updated_time": "2017-07-14T08:41:56.476",
+            "name": "内灰策略6",
+            "app": 1,
+            "push_content": "<p>test push content000</p>",
+            "creator": 4,
+            "user_groups": [],
+            "push_channels": [1, 2]
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 15,
+        "fields":
+        {
+            "created_time": "2017-07-14T09:20:42.656",
+            "updated_time": "2017-07-14T15:33:24.196",
+            "name": "内灰策略xxx",
+            "app": 1,
+            "push_content": "<p>test push content000</p>",
+            "creator": 4,
+            "user_groups": [],
+            "push_channels": [1, 2]
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 16,
+        "fields":
+        {
+            "created_time": "2017-07-14T09:28:07.688",
+            "updated_time": "2017-07-14T09:28:07.688",
+            "name": "内灰策略x",
+            "app": 1,
+            "push_content": "<p>test push content000</p>",
+            "creator": 4,
+            "user_groups": [],
+            "push_channels": [1, 2]
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 17,
+        "fields":
+        {
+            "created_time": "2017-07-14T09:28:14.287",
+            "updated_time": "2017-07-14T09:28:14.287",
+            "name": "测试内灰策略x",
+            "app": 1,
+            "push_content": "<p>test push content000</p>",
+            "creator": 4,
+            "user_groups": [],
+            "push_channels": [1, 2]
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 18,
+        "fields":
+        {
+            "created_time": "2017-07-14T09:33:16.479",
+            "updated_time": "2017-07-14T09:33:16.479",
+            "name": "内灰策略测试x",
+            "app": 1,
+            "push_content": "<p>test push content000</p>",
+            "creator": 4,
+            "user_groups": [],
+            "push_channels": [1, 2]
+        }
+    },
+    {
+        "model": "strategy.innerstrategy",
+        "pk": 19,
+        "fields":
+        {
+            "created_time": "2017-07-14T09:41:48.552",
+            "updated_time": "2017-07-14T09:41:48.552",
+            "name": "内灰策略x",
+            "app": 1,
+            "push_content": "<p>test push content000</p>",
+            "creator": 4,
+            "user_groups": [],
+            "push_channels": [1, 2]
+        }
+    },
+    {
+        "model": "strategy.outerstrategy",
+        "pk": 1,
+        "fields":
+        {
+            "created_time": "2017-07-11T00:00:00",
+            "updated_time": "2017-07-11T00:00:00",
+            "name": "外灰策略1",
+            "app": 1,
+            "creator": 1,
+            "version": "",
+            "allow_users": "1",
+            "range_dates": "[]",
+            "cities": "1",
+            "city_enable": true,
+            "channels": "wanda_channel",
+            "percentage": 0,
+            "status": false,
+            "is_compatible": 1,
+            "frequency": 2,
+            "change_log": "changelog",
+            "change_log_img": "testimg"
+        }
+    },
+    {
+        "model": "strategy.outerstrategy",
+        "pk": 2,
+        "fields":
+        {
+            "created_time": "2017-07-14T15:12:52.665",
+            "updated_time": "2017-07-14T15:14:03.747",
+            "name": "外灰策略2xxx",
+            "app": 1,
+            "creator": 4,
+            "version": "abc",
+            "allow_users": "1",
+            "range_dates": "[]",
+            "cities": "1",
+            "city_enable": true,
+            "channels": "wanda_channel",
+            "percentage": 0,
+            "status": false,
+            "is_compatible": 1,
+            "frequency": 2,
+            "change_log": "changelog",
+            "change_log_img": "testimg"
+        }
+    }
+]

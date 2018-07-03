@@ -1,0 +1,155 @@
+[
+{
+    "pk": 1,
+    "model": "usage.Property",
+    "fields": {
+        "key": "from",
+        "value": "poster",
+        "event_id": 1
+    }
+},
+{
+    "pk": 2,
+    "model": "usage.Property",
+    "fields": {
+        "key": "appId",
+        "value": "1",
+        "event_id": 1
+    }
+},
+{
+    "pk": 3,
+    "model": "usage.Property",
+    "fields": {
+        "key": "from",
+        "value": "poster",
+        "event_id": 2
+    }
+},
+{
+    "pk": 4,
+    "model": "usage.Property",
+    "fields": {
+        "key": "appId",
+        "value": "1",
+        "event_id": 2
+    }
+},
+{
+    "pk": 5,
+    "model": "usage.Property",
+    "fields": {
+        "key": "taskId",
+        "value": "6",
+        "event_id": 3
+    }
+},
+{
+    "pk": 6,
+    "model": "usage.Property",
+    "fields": {
+        "key": "from",
+        "value": "poster",
+        "event_id": 3
+    }
+},
+    {
+    "pk": 7,
+    "model": "usage.Property",
+    "fields": {
+        "key": "appId",
+        "value": "1",
+        "event_id": 4
+    }
+},
+{
+    "pk": 8,
+    "model": "usage.Property",
+    "fields": {
+        "key": "from",
+        "value": "poster",
+        "event_id": 4
+    }
+},
+{
+    "pk": 9,
+    "model": "usage.Property",
+    "fields": {
+        "key": "appId",
+        "value": 1,
+        "event_id": 5
+    }
+} ,
+{
+    "pk": 10,
+    "model": "usage.Property",
+    "fields": {
+        "key": "taskId",
+        "value": 1,
+        "event_id": 5
+    }
+} ,
+{
+    "pk": 11,
+    "model": "usage.Property",
+    "fields": {
+        "key": "taskId",
+        "value": 1,
+        "event_id": 6
+    }
+} ,
+{
+    "pk": 12,
+    "model": "usage.Property",
+    "fields": {
+        "key": "appId",
+        "value": 6,
+        "event_id": 7
+    }
+} ,
+{
+    "pk": 13,
+    "model": "usage.Property",
+    "fields": {
+        "key": "from",
+        "value": "local",
+        "event_id": 7
+    }
+} ,
+{
+    "pk": 14,
+    "model": "usage.Property",
+    "fields": {
+        "key": "issueId",
+        "value": 9,
+        "event_id": 7
+    }
+} ,
+{
+    "pk": 15,
+    "model": "usage.Property",
+    "fields": {
+        "key": "issueId",
+        "value": 10,
+        "event_id": 8
+    }
+} ,
+{
+    "pk": 16,
+    "model": "usage.Property",
+    "fields": {
+        "key": "from",
+        "value": "remote",
+        "event_id": 8
+    }
+} ,
+{
+    "pk": 17,
+    "model": "usage.Property",
+    "fields": {
+        "key": "appId",
+        "value": 6,
+        "event_id": 8
+    }
+}
+]

@@ -1,0 +1,13 @@
+django-rest-swagger
+flake8>=2.1.0
+mock>=1.0.1
+Sphinx
+
+django-extensions
+
+
+# Unit test xml report
+django-nose==1.4.4
+unittest-xml-reporting==2.1.0
+
+pyyaml

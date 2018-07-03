@@ -1,0 +1,18 @@
+[
+  {
+     "pk": 1,
+     "model": "common.AppModule",
+     "fields": {
+         "app": 1,
+         "module_name": "module1"
+     }
+  },
+  {
+     "pk": 2,
+     "model": "common.AppModule",
+     "fields": {
+         "app": 1,
+         "module_name": "module2"
+     }
+  }
+]

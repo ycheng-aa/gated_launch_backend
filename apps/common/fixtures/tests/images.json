@@ -1,0 +1,24 @@
+[
+  {
+     "pk": 1,
+     "model": "common.Image",
+     "fields": {
+         "image_id": "aabbceadfdfdfdfdfdf",
+         "image_name": "image1",
+         "image_desc": {"length": 100, "width": 200},
+         "created_time": "2017-06-29 18:25:11.681308",
+         "updated_time": "2017-06-29 18:25:11.681308"
+     }
+  },
+  {
+     "pk": 2,
+     "model": "common.Image",
+     "fields": {
+         "image_id": "eprghperahgioaergji",
+         "image_name": "image2",
+         "image_desc": {"length": 300, "width": 400},
+         "created_time": "2017-06-29 18:25:11.681308",
+         "updated_time": "2017-06-29 18:25:11.681308"
+     }
+  }
+]

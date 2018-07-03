@@ -1,0 +1,13 @@
+node ('10.213.97.5') {
+   stage('Clone Code') {
+   git branch: 'master', credentialsId: '97171186-aa3c-4a94-9fdb-dc601c3247f9', url: 'ssh://jenkins@git.intra.ffan.com:8022/qa/gated-launch-backend'
+   echo 'get code successful!'
+   }
+   stage('Deploy to product'){
+   //download the package and deploy to product
+      sh './ci/deploy.sh product ${build_num} ${product_name} ${module_name}'
+	  echo "======================================"
+      echo 'deploy to product env successful!'
+   }
+}
+

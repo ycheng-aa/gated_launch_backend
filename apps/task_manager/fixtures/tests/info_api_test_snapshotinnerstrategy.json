@@ -1,0 +1,46 @@
+[
+{
+    "pk": 1,
+    "model": "task_manager.SnapshotInnerStrategy",
+    "fields": {
+        "gray_task": 1,
+        "index": 1,
+        "name": "飞凡天使内测",
+        "app": 1,
+        "push_content": "xxxxxxxxx",
+        "creator":5,
+        "user_groups":[1,2,3],
+        "created_time": "2017-06-29 18:25:11.681308",
+        "updated_time": "2017-06-29 18:25:11.681308"
+    }
+},
+{
+    "pk": 2,
+    "model": "task_manager.SnapshotInnerStrategy",
+    "fields": {
+        "gray_task": 2,
+        "index": 1,
+        "name": "快钱天使内测",
+        "app": 2,
+        "push_content": "xxxxxxxxx",
+        "creator":5,
+        "user_groups":[1,2],
+        "created_time": "2017-06-29 18:25:11.681308",
+        "updated_time": "2017-06-29 18:25:11.681308"
+    }
+},
+{
+    "pk": 3,
+    "model": "task_manager.SnapshotInnerStrategy",
+    "fields": {
+        "gray_task": 3,
+        "index": 1,
+        "name": "快钱天使内测-3",
+        "app": 2,
+        "push_content": "xxxxxxxxx",
+        "creator":5,
+        "user_groups":[4],
+        "created_time": "2017-06-29 18:25:11.681308",
+        "updated_time": "2017-06-29 18:25:11.681308"
+    }
+}]

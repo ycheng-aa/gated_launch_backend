@@ -1,0 +1,16 @@
+[
+{
+    "pk": 1,
+    "model": "issue.IssueReportSource",
+    "fields": {
+        "name": "weixin"
+    }
+},
+{
+    "pk": 2,
+    "model": "issue.IssueReportSource",
+    "fields": {
+        "name": "四大区运营"
+    }
+}
+]

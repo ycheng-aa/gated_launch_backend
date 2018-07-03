@@ -1,0 +1,11 @@
+[
+    {
+        "pk": 1,
+        "model": "app.AppType",
+        "fields": {
+            "name": "ios",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    }
+]

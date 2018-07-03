@@ -1,0 +1,17 @@
+*.py[co]
+*.sqlite3
+*.swp
+settings_local.py
+reports.xml
+.tito/copr_user.conf
+
+# virtualenv
+venv
+active
+
+# log 
+logs
+
+.DS_Store
+.idea/
+.python-version

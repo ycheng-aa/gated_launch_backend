@@ -1,0 +1,29 @@
+[
+    {
+        "pk": 1,
+        "model": "task_manager.GrayStatus",
+        "fields": {
+            "name": "preparation",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "task_manager.GrayStatus",
+        "fields": {
+            "name": "testing",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "task_manager.GrayStatus",
+        "fields": {
+            "name": "finished",
+            "created_time": "2017-06-29 18:25:11.681308",
+            "updated_time": "2017-06-29 18:25:11.681308"
+        }
+    }
+]

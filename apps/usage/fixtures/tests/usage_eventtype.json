@@ -1,0 +1,42 @@
+[
+{
+    "pk": 1,
+    "model": "usage.EventType",
+    "fields": {
+        "name": "taskDetailEntry",
+        "desc": "NULL"
+    }
+},
+{
+    "pk": 2,
+    "model": "usage.EventType",
+    "fields": {
+        "name": "appDownload",
+        "desc": "NULL"
+    }
+},
+{
+    "pk": 3,
+    "model": "usage.EventType",
+    "fields": {
+        "name": "issueFeedbackEntry",
+        "desc": "NULL"
+    }
+},
+    {
+    "pk": 4,
+    "model": "usage.EventType",
+    "fields": {
+        "name": "feedbackSubmitSuccess",
+        "desc": "NULL"
+    }
+},
+{
+    "pk": 5,
+    "model": "usage.EventType",
+    "fields": {
+        "name": "wxLoginEntry",
+        "desc": "NULL"
+    }
+}
+]

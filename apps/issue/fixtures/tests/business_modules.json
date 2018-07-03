@@ -1,0 +1,26 @@
+[
+{
+    "pk": 1,
+    "model": "issue.BusinessModuleTree",
+    "fields": {
+        "name": "parking",
+        "tree_id": 1,
+        "lft": 1,
+        "rght": 4,
+        "level": 0
+    }
+},
+{
+    "pk": 2,
+    "model": "issue.BusinessModuleTree",
+    "fields": {
+        "name": "parking car",
+        "tree_id": 1,
+        "lft": 2,
+        "rght": 3,
+        "level": 1,
+        "parent": 1,
+        "disabled": 1
+    }
+}
+]

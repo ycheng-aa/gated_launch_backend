@@ -1,0 +1,28 @@
+[
+{
+    "pk": 1,
+    "model": "user_group.UserGroup",
+    "fields": {
+        "name": "owner",
+        "type": 4,
+        "app": 1,
+        "creator": 2,
+        "members": [3],
+        "created_time": "2017-06-29 18:25:11.681308",
+        "updated_time": "2017-06-29 18:25:11.681308"
+    }
+},
+{
+    "pk": 2,
+    "model": "user_group.UserGroup",
+    "fields": {
+        "name": "test_owner",
+        "type": 4,
+        "app": 5,
+        "creator": 2,
+        "members": [7],
+        "created_time": "2017-06-29 18:25:11.681308",
+        "updated_time": "2017-06-29 18:25:11.681308"
+    }
+}
+]

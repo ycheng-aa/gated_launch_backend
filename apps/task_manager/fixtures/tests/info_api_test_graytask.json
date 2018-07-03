@@ -1,0 +1,59 @@
+[
+{
+    "pk": 1,
+    "model": "task_manager.GrayTask",
+    "fields": {
+        "task_name": "0711飞凡灰度发布",
+        "app": 1,
+        "start_date":"2017-07-11",
+        "end_date":"2017-07-16",
+        "image": "aabbceadfdfdfdfdfdf",
+        "inner_strategy":1,
+
+        "current_status":1,
+        "is_display":false,
+        "creator":5,
+        "created_time": "2017-06-29 18:25:11.681308",
+        "updated_time": "2017-06-29 18:25:11.681308",
+        "is_join_kesutong":true
+    }
+},
+{
+    "pk": 2,
+    "model": "task_manager.GrayTask",
+    "fields": {
+        "task_name": "0711快钱灰度发布",
+        "app": 2,
+        "start_date":"2017-07-11",
+        "end_date":"2017-07-16",
+        "image": "aabbceadfdfdfdfdfdf",
+        "inner_strategy":1,
+
+        "current_status":1,
+        "is_display":false,
+        "creator":5,
+        "created_time": "2017-07-01 18:25:11.681308",
+        "updated_time": "2017-07-01 18:25:11.681308",
+        "is_join_kesutong":false
+    }
+},
+{
+    "pk": 3,
+    "model": "task_manager.GrayTask",
+    "fields": {
+        "task_name": "0711快钱灰度发布-3",
+        "app": 2,
+        "start_date":"2017-07-11",
+        "end_date":"2017-07-16",
+        "image": "aabbceadfdfdfdfdfdf",
+        "inner_strategy":1,
+
+        "current_status":1,
+        "is_display":false,
+        "creator":5,
+        "created_time": "2017-07-02 18:25:11.681308",
+        "updated_time": "2017-07-02 18:25:11.681308",
+        "is_join_kesutong":true
+    }
+}
+]
